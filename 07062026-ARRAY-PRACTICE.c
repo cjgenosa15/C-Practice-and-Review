@@ -14,7 +14,37 @@ int sum(int stuArr[], int length)
 
 float average(int stuArr[], int length)
 {
-    return ((float)sum(stuArr, length)/length);
+    return (((float)sum(stuArr, length))/length);
+}
+
+int highest(int stuArr[], int length)
+{
+    int high = stuArr[0];
+
+    for(int i = 0; i < length; i++)
+    {
+        if(high < stuArr[i])
+        {
+            high = stuArr[i];
+        }
+    }
+
+    return high;
+}
+
+int lowest(int stuArr[], int length)
+{
+    int low = stuArr[0];
+
+    for(int i = 0; i < length; i++)
+    {
+        if(low > stuArr[i])
+        {
+            low = stuArr[i];
+        }
+    }
+
+    return low;
 }
 
 int main()
@@ -23,23 +53,42 @@ int main()
     printf("How many students? ");
     scanf("%d", &studentNum);
 
-    int studentArray[studentNum];
+    int studentGrade[studentNum];
 
     for(int i = 0; i < studentNum; i++)
     {
         printf("Enter grade %d: ", i + 1);
-        scanf("%d", &studentArray[i]);
+        scanf("%d", &studentGrade[i]);
     }
 
-    printf("\nGrades: ");
+    printf("\nGrades:  ");
     for(int i = 0; i < studentNum; i++)
     {
-        printf(" %d", studentArray[i]);
+        printf(" %d", studentGrade[i]);
     }
 
-    printf("\nSum:     %d", sum(studentArray, studentNum));
-    printf("\nAverage: %d", average(studentArray, studentNum));
+    int passedNum = 0;
+    int failedNum = 0;
 
+    for(int i = 0; i < studentNum; i++)
+    {
+        if(studentGrade[i] >= 75)
+        {
+            passedNum++;
+        }
+
+        else
+        {
+            failedNum++;
+        }
+    }
+
+    printf("\nSum:      %d", sum(studentGrade, studentNum));
+    printf("\nAverage:  %.2f", average(studentGrade, studentNum));
+    printf("\nHighest:  %d", highest(studentGrade, studentNum));
+    printf("\nLowest:   %d", lowest(studentGrade, studentNum));
+    printf("\nPassed:   %d", passedNum);
+    printf("\nFailed:   %d", failedNum);
 
     return 0;
 }
