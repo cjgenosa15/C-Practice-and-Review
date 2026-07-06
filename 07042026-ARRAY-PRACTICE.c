@@ -49,7 +49,7 @@ int main()
     int array[5];
     int length = 5;
 
-    for(int i = 0; i < 5; i++)
+    for(int i = 0; i < length; i++)
     {
         printf("\nEnter a number %d: ", i + 1);
         scanf("%d", &array[i]);
