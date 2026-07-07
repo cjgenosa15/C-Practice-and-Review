@@ -19,7 +19,7 @@ float average(int stuArr[], int length)
 
 int highest(int stuArr[], int length)
 {
-    int high = stuArr[0];
+    int high = stuArr[0];  
 
     for(int i = 0; i < length; i++)
     {
