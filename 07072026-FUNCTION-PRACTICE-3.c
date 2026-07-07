@@ -28,7 +28,7 @@ void isPrime(int num)
 
     else
     {
-        for(int i = 2; i == num; i++)
+        for(int i = 2; i < num; i++)
         {
             if(num % i == 0)
             {
@@ -41,6 +41,30 @@ void isPrime(int num)
     }
 }
 
+void isPositive(int num)
+{
+    if(num > 0)
+    {
+        printf("\n%d is Positive", num);
+    }
+
+    else if(num < 0)
+    {
+        printf("\n%d is Negative", num);
+    }
+    else
+    {
+        printf("\n%d is Zero", num);
+    }
+}
+
+int sumOfDigits(int num)
+{
+    int sum = 0;
+
+    for
+}
+
 int main()
 {
     int number;
@@ -50,8 +74,8 @@ int main()
     printf("\n--- Number Analysis ---");
     isEven(number);
     isPrime(number);
-    //isEven(number);
-    //isEven(number);
+    isPositive(number);
+    printf("Sum of Digits: %d", sumOfDigits(number));
     //isEven(number);
 
     return 0;

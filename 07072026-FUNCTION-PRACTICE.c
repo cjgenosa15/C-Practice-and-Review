@@ -37,7 +37,8 @@ void isPrime(int num)
                 return;
             }
         }
-        printf("%d is  Prime\n", num);
+
+        printf("%d is Prime\n", num);
     }
 }
 
