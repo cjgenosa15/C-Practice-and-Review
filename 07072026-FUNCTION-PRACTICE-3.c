@@ -62,7 +62,29 @@ int sumOfDigits(int num)
 {
     int sum = 0;
 
-    for
+    do
+    {
+        sum += num % 10;
+        num /= 10;
+    }
+    while(num != 0);
+
+    return sum;
+}
+
+int reversed(int num)
+{
+    int rev = 0;
+
+    do
+    {
+        rev *= 10;
+        rev += (num % 100);
+        num /= 10;
+    }
+    while(num != 0);
+
+    return rev;
 }
 
 int main()
@@ -75,8 +97,8 @@ int main()
     isEven(number);
     isPrime(number);
     isPositive(number);
-    printf("Sum of Digits: %d", sumOfDigits(number));
-    //isEven(number);
+    printf("\nSum of Digits: %d", sumOfDigits(number));
+    printf("\nReversed: %d", reversed(number));
 
     return 0;
 }
