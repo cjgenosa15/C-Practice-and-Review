@@ -79,7 +79,7 @@ int reversed(int num)
     do
     {
         rev *= 10;
-        rev += (num % 100);
+        rev += (num % 10);
         num /= 10;
     }
     while(num != 0);
