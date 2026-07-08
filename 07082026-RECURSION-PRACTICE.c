@@ -10,8 +10,43 @@
  */
 #include<stdio.h>
 
+int power(int base, int pow)
+{
+    if(pow == 1)
+    {
+        return base;
+    }
+
+    return(base * power(base, pow - 1));
+}
+
+int sumOfDigits(int num)
+{
+    if(num == 0)
+    {
+        return 0;
+    }
+
+    return((num % 10) + sumOfDigits(num /= 10));
+}
+
+int fibonacci(int num)
+{
+    if(num == 1 || num == 2)
+    {
+        return 1;
+    }
+
+    return(fibonacci(num - 1) + fibonacci(num - 2));
+}
+
 int main()
 {
-     
+    printf("%d\n", power(2, 3));
+    printf("%d\n", power(3, 4));
+    printf("%d\n", sumOfDigits(123));
+    printf("%d\n", sumOfDigits(456));
+    printf("%d\n", fibonacci(5));
+    printf("%d\n", fibonacci(6));
     return 0;
 }
