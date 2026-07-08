@@ -1,3 +1,8 @@
+/* ARRAY PRACTICE - BASIC
+ * Create an array of 5 integers with user input.
+ * Print all numbers, then print the sum, average,
+ * largest and smallest number in the array.
+ */
 #include<stdio.h>
 
 int sum(int array[], int length)

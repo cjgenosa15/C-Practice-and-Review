@@ -1,3 +1,14 @@
+/* FUNCTION PRACTICE - NUMBER ANALYZER
+ * Ask the user for a number and run it through
+ * all of these functions:
+ * 1. isEven(num)       - prints even or odd
+ * 2. isPrime(num)      - prints prime or not prime
+ * 3. isPositive(num)   - prints positive, negative, or zero
+ * 4. sumOfDigits(num)  - adds all digits together
+ *                        ex: 123 = 1 + 2 + 3 = 6
+ * 5. reverseNum(num)   - reverses the number
+ *                        ex: 123 = 321
+ */
 #include<stdio.h>
 
 void isEven(int num)

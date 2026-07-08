@@ -1,3 +1,12 @@
+/* RECURSION PRACTICE - BASIC
+ * Write three recursive functions:
+ * 1. countdown(n)  - counts down from n to 0
+ *                    prints DONE! at the end
+ * 2. factorial(n)  - multiplies n down to 1
+ *                    ex: factorial(5) = 5x4x3x2x1 = 120
+ * 3. sumDown(n)    - adds all numbers from n down to 1
+ *                    ex: sumDown(5) = 5+4+3+2+1 = 15
+ */
 #include<stdio.h>
 
 void countdown(int n)

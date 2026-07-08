@@ -1,3 +1,11 @@
+/* FUNCTION PRACTICE - NUMBER CHECKER
+ * Write three separate functions:
+ * 1. isEven(num)      - prints if number is even or odd
+ * 2. isPrime(num)     - prints if number is prime or not
+ * 3. power(base, exp) - returns base to the power of exp
+ *                       without using any library
+ * Test all three functions in main with hardcoded values.
+ */
 #include<stdio.h>
 
 void isEven(int num)

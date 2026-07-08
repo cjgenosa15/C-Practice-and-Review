@@ -1,3 +1,11 @@
+/* FUNCTION PRACTICE - TEMPERATURE CONVERTER
+ * Write three functions that convert temperatures:
+ * 1. celsiusToFahrenheit(celsius) - Formula: (celsius x 9/5) + 32
+ * 2. fahrenheitToCelsius(fahrenheit) - Formula: (fahrenheit - 32) x 5/9
+ * 3. celsiusToKelvin(celsius) - Formula: celsius + 273.15
+ * Ask the user for celsius and fahrenheit input
+ * and print all conversions.
+ */
 #include<stdio.h>
 
 float fah(float cel)

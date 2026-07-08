@@ -1,3 +1,10 @@
+/* ARRAY PRACTICE - STUDENT GRADE SYSTEM
+ * Ask the user how many students there are.
+ * Input each student's grade, print all grades,
+ * then print the sum, average, highest and lowest grade.
+ * Also print how many students passed (grade >= 75)
+ * and how many failed.
+ */
 #include<stdio.h>
 
 int sum(int stuArr[], int length)
