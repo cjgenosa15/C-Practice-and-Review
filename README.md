@@ -2,4 +2,4 @@
 
 Learning C programming from scratch and AI.
 
-Topics covered: arrays, functions, pointers, structs.
+Topics covered: arrays, functions, Recursion, pointers, structs.
