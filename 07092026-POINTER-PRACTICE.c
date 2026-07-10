@@ -50,5 +50,3 @@ int main()
 
     return 0;
 }
-
-// NOT YET CHECKED (CLAUDE LIMIT HUHU)
