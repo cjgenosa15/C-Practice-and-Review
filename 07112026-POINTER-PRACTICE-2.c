@@ -37,9 +37,23 @@
 
 #include<stdio.h>
 
+void swap(int *a, int *b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
 void reverseArray(int *start, int *end)
 {
+    while(start < end)
+    {
+        swap(start, end);
+        start++;
+        end--;
+    }
 
+    printf("Output:  %d %d %d %d %d %d", arr[0], arr[1], arr[2], arr[3], arr[4], arr[5]);
 }
 
 int main()
@@ -48,7 +62,7 @@ int main()
     int arrSize = sizeof(arr)/sizeof(arr[0]);
 
     printf("Input:  %d %d %d %d %d %d", arr[0], arr[1], arr[2], arr[3], arr[4], arr[5]);
-    //reverseArray(&arr, &arr + arrSize - 1);
+    reverseArray(&arr, &arr + arrSize - 1);
 
     return 0;
 }
