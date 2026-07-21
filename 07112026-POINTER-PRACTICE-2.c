@@ -37,10 +37,18 @@
 
 #include<stdio.h>
 
+void reverseArray(int *start, int *end)
+{
+
+}
+
 int main()
 {
     int arr[6] = {1, 2, 3, 4, 5, 6};
     int arrSize = sizeof(arr)/sizeof(arr[0]);
 
     printf("Input:  %d %d %d %d %d %d", arr[0], arr[1], arr[2], arr[3], arr[4], arr[5]);
+    //reverseArray(&arr, &arr + arrSize - 1);
+
+    return 0;
 }
